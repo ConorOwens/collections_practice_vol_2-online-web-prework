@@ -66,4 +66,7 @@ end
 def find_cool(array)
  array.select { |hash| hash[:temperature] == "cool"}
 end
+
+def organize_schools
   
+end
