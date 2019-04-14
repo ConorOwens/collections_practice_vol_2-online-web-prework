@@ -43,16 +43,10 @@ def remove_non_strings(array)
 end
 
 def  count_elements(array)
-  ans = []
-  array.each do |hash|
-    if ans.include?(hash)
-      ans[:count] += 1
-    else
-      ans << hash
-      ans(hash) << {count: 1}
+  array.map do |hash|
+    hash[:]
     end
   end
-  return ans
 end
         
     
