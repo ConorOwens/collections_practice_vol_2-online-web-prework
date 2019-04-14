@@ -52,7 +52,7 @@ end
 def merge_data(keys, data)
   data.each do |hash|
     hash.each do |name, data|
-      data.each do |attribute, value|
+      keys.each do |attribute, value|
         binding.pry 
       end
     end
