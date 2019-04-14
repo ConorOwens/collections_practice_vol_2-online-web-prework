@@ -31,3 +31,13 @@ def first_wa(array)
   end
   x 
 end
+
+def remove_non_strings(array)
+  ans = []
+  array.each do |value|
+    if value.class == string
+      ans << value
+    end
+  end
+  ans
+end
