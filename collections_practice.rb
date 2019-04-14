@@ -50,17 +50,17 @@ def  count_elements(array)
 end
 
 def merge_data(keys, data)
-  array = []
+  ans = []
   data.each do |hash|
     hash.each do |name, info|
       keys.each do |key|
         if key.values[0] == name
-          array << key.merge(info)
+          ans << key.merge(info)
         end
       end
     end
   end
-  array
+  ans
 end
 
 def find_cool(array)
