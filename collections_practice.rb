@@ -50,8 +50,10 @@ def  count_elements(array)
 end
 
 def merge_data(keys, data)
-  binding.pry
   data.each do |hash|
+    hash.each do |name, data|
+      data.each do |attribute, value|
+        binding.pry 
     if hash.include?(keys[:first_name])
       
 end
