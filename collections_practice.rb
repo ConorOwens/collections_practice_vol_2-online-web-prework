@@ -55,7 +55,6 @@ def merge_data(keys, data)
     hash.each do |name, info|
       keys.each do |key|
         if key.values[0] == name
-          binding.pry
           array << key.merge(info)
         end
       end
