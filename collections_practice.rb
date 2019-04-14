@@ -44,8 +44,8 @@ end
 
 def  count_elements(array)
   array.map do |hash|
-    hash[:count] = array.count(word)
-    word
+    hash[:count] = array.count(hash)
+    hash
   end
 end
         
