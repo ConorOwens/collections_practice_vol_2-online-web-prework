@@ -56,6 +56,7 @@ def merge_data(keys, data)
       keys.each do |key|
         if key[:first_name] == name
           array << key.merge(info)
+        end
       end
     end
   end
