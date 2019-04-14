@@ -48,7 +48,7 @@ def  count_elements(array)
     if ans.include?(hash)
       hash[:count] += 1 
     else
-      and << hash[:count] = 1
+      ans << hash[:count] = 1
     end
   end
 end
