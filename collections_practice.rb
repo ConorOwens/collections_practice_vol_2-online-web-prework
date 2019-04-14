@@ -71,7 +71,11 @@ def organize_schools(hash)
   ans = {}
   hash.each do |campus, geo|
     geo.each do |loc, city|
-      binding.pry
+      if ans[city]
+        ans[city] << campus
+      else
+        ans[city] = [campus]
+      end
     end
   end
 end
