@@ -51,4 +51,7 @@ end
 
 def merge_data(keys, data)
   binding.pry
+  data.each do |hash|
+    if hash.include?(keys[:first_name])
+      
 end
