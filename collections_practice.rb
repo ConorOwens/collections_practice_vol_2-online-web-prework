@@ -46,12 +46,12 @@ def  count_elements(array)
   ans = []
   array.each do |hash|
     if ans.include?(hash)
-      hash[:count] += 1 
+      ans[:count] += 1
     else
-      ans << hash[:count] = 1
+      ans << hash
+      ans(hash) << {count: 1}
     end
   end
-  ans
 end
         
     
