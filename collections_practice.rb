@@ -50,4 +50,5 @@ def  count_elements(array)
 end
 
 def merge_data(keys, data)
-  
+  hash = {keys => data}
+end
