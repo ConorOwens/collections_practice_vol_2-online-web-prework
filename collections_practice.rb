@@ -68,5 +68,5 @@ def find_cool(array)
 end
 
 def organize_schools(hash)
-  hash.sort_by {|campus, location| 
+  hash.sort_by {|campus, location| location}
 end
