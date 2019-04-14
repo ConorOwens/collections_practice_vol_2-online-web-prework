@@ -35,7 +35,7 @@ end
 def remove_non_strings(array)
   ans = []
   array.each do |value|
-    if value.class == string
+    if value.class == String
       ans << value
     end
   end
