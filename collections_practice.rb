@@ -48,6 +48,6 @@ def  count_elements(array)
     hash
   end
 end
-        
-    
+
+def merge_data(keys, data)
   
