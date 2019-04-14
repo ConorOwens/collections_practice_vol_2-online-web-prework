@@ -20,3 +20,14 @@ def contain_a(array)
   end
   ans
 end
+
+def first_wa(array)
+  x = 0 
+  array.each do |value|
+    if value[0..1] == "wa"
+      x = value
+      break
+    end
+  end
+  x 
+end
