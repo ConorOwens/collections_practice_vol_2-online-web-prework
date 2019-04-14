@@ -43,7 +43,7 @@ def remove_non_strings(array)
 end
 
 def  count_elements(array)
-  array.map do |hash|
+  array.uniq.map do |hash|
     hash[:count] = array.count(hash)
     hash
   end
