@@ -52,11 +52,10 @@ end
 def merge_data(keys, data)
   array = []
   data.each do |hash|
-    hash.each do |name, data|
+    hash.each do |name, info|
       keys.each do |key|
         if key[:first_name] == name
-          array << key.merge()
-        binding.pry 
+          array << key.merge(info)
       end
     end
   end
